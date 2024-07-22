@@ -1,0 +1,28 @@
+/* Additional CSS for Flexbox alignment */
+
+/* Centering and filling the screen width */
+.outer {
+    width: 45%; /* Each outer container takes 45% */
+    height: 80%; /* 80% height */
+    margin: 5% 0; /* 5% margin top and bottom */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    position: relative; /* Position relative for absolute positioning of inner elements */
+}
+
+/* Positioning the left inner box */
+.outer-left .inner-white {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: left; /* Align text to the left */
+}
+
+/* Positioning the right inner box */
+.outer-right .inner-yellow {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: right; /* Align text to the right */
+}
